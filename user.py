@@ -1,3 +1,6 @@
+from Project3 import LearningPlan
+
+
 class User:
     def __init__(self, Name, PhoneNumber, Email, Gender, Governorate, Password, Age, National_ID):
         self.name = Name
@@ -9,5 +12,5 @@ class User:
         self.age = Age
         self.national_id = National_ID
         self.role = 'user'
-        self.learning_plan = []
+        self.learning_plan = LearningPlan(Governorate)
 

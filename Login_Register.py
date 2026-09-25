@@ -35,7 +35,7 @@ def login_registration():
                 )
 
                 current_user.role = data["role"]
-                current_user.learning_plan = data["learning_plan"]
+                current_user.learning_plan.load_list(data["learning_plan"])
                 break
             else:
                 print("Invalid Email or Password\n")
@@ -92,7 +92,7 @@ def login_registration():
                 "age": current_user.age,
                 "national_id": current_user.national_id,
                 "role": current_user.role,
-                "learning_plan": current_user.learning_plan
+                "learning_plan": current_user.learning_plan.to_list()
             }
             helper_functions.save_users(users)
             break
