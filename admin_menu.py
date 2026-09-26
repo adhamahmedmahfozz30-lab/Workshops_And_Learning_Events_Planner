@@ -1,4 +1,3 @@
-import math
 from event_manager import EventManager
 from helper_functions import merge_sort
 from helper_functions import load_events, save_events
@@ -156,7 +155,7 @@ def read_number(prompt, whole=False, maximum=None):
                 value = int(input(prompt).strip())
             else:
                 value = float(input(prompt).strip())
-            if not math.isfinite(value) or value < 0:
+            if value < 0:
                 print('Enter a non-negative number.')
                 continue
             if maximum is not None and value > maximum:
@@ -167,11 +166,11 @@ def read_number(prompt, whole=False, maximum=None):
             print('Invalid number! Try again.')
 
 
-def read_event_name(manager, current_event=None):
+def read_event_name(manager):
     while True:
-        name = read_text('Event Name: ')
+        name = read_text('Event Name: ') # check that the input is not empty
         existing = manager.find_event_by_name(name)
-        if existing is None or existing is current_event:
+        if existing is None :
             return name
         print('An event with this name already exists.')
 
@@ -229,7 +228,7 @@ def update_event(event):
     choice = input('Enter Your Choice: ').strip()
     changes = {}
     if choice == '1':
-        name = read_event_name(manager, event)
+        name = read_event_name(manager)
         # The existing update_event(name, **args) cannot accept a new name.
         # Reuse the Event setter and their sort without changing their class.
         event.set_name(name)
