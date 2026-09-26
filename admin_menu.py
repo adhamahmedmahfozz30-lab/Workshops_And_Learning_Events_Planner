@@ -229,8 +229,6 @@ def update_event(event):
     changes = {}
     if choice == '1':
         name = read_event_name(manager)
-        # The existing update_event(name, **args) cannot accept a new name.
-        # Reuse the Event setter and their sort without changing their class.
         event.set_name(name)
         merge_sort(manager.events, 0, len(manager.events) - 1, 'get_name')
     elif choice == '2':
