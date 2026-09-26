@@ -1,5 +1,6 @@
 import math
-from Project3 import EventManager, merge_sort
+from event_manager import EventManager
+from helper_functions import merge_sort
 from helper_functions import load_events, save_events
 
 event_manager = EventManager()
@@ -15,7 +16,6 @@ CATEGORIES = {
 
 
 def admin_menu(current_user):
-    event_manager.events = []
     for event in load_events():
         event_manager.add_event(
             event['name'], event['trainer'], event['location'], event['price'],

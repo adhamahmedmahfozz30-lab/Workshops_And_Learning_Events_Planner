@@ -1,4 +1,5 @@
-from Project3 import EventManager, merge_sort
+from event_manager import EventManager
+from helper_functions import merge_sort
 from helper_functions import load_users, save_users, load_events
 
 event_manager = EventManager()
@@ -167,14 +168,14 @@ def event_details(event, plan):
 
 def plan_menu(plan):
     while True:
-        plan.view_plan()
-        print('\n1) Remove Event')
-        print('0) Back')
-        choice = input('Enter Your Choice: ').strip()
-        if choice == '1':
-            name = input('Event name to remove: ').strip()
-            plan.remove_event(name)
-        elif choice == '0':
-            return
-        else:
-            print('Invalid choice! Try again.')
+        if not plan.view_plan():
+            print('\n1) Remove Event')
+            print('0) Back')
+            choice = input('Enter Your Choice: ').strip()
+            if choice == '1':
+                name = input('Event name to remove: ').strip()
+                plan.remove_event(name)
+            elif choice == '0':
+                return
+            else:
+                print('Invalid choice! Try again.')

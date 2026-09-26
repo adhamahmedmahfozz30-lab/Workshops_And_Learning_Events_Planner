@@ -1,6 +1,6 @@
 [
     {
-        "name": "Python Basics",
+        "name": "Advanced Python",
         "trainer": "Demo Trainer",
         "location": "Cairo",
         "price": 100,
@@ -8,16 +8,6 @@
         "rating": 4.5,
         "avail_seats": 20,
         "category": "Programming"
-    },
-    {
-        "name": "Introduction to AI",
-        "trainer": "Demo Trainer",
-        "location": "Giza",
-        "price": 200,
-        "duration": 4,
-        "rating": 4.7,
-        "avail_seats": 15,
-        "category": "AI"
     },
     {
         "name": "Data Analysis Basics",
@@ -30,14 +20,14 @@
         "category": "Data"
     },
     {
-        "name": "Starting a Business",
-        "trainer": "Demo Trainer",
-        "location": "Alexandria",
-        "price": 120,
-        "duration": 2,
-        "rating": 4.2,
-        "avail_seats": 25,
-        "category": "Entrepreneurship"
+        "name": "DB 2",
+        "trainer": "magdy 3lam",
+        "location": "aswan",
+        "price": 1520.0,
+        "duration": 53.0,
+        "rating": 4.0,
+        "avail_seats": 138,
+        "category": "Programming"
     },
     {
         "name": "Design Fundamentals",
@@ -50,6 +40,16 @@
         "category": "Design"
     },
     {
+        "name": "Introduction to AI",
+        "trainer": "Demo Trainer",
+        "location": "Giza",
+        "price": 200,
+        "duration": 4,
+        "rating": 4.7,
+        "avail_seats": 15,
+        "category": "AI"
+    },
+    {
         "name": "Presentation Skills",
         "trainer": "Demo Trainer",
         "location": "Cairo",
@@ -58,5 +58,15 @@
         "rating": 4.3,
         "avail_seats": 30,
         "category": "Soft Skills"
+    },
+    {
+        "name": "Starting a Business",
+        "trainer": "Demo Trainer",
+        "location": "Alexandria",
+        "price": 120,
+        "duration": 2,
+        "rating": 4.2,
+        "avail_seats": 25,
+        "category": "Entrepreneurship"
     }
 ]

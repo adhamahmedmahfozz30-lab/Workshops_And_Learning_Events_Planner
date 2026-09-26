@@ -1,4 +1,4 @@
-from Project3 import LearningPlan
+from learning_plan import LearningPlan
 
 
 class User:

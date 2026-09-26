@@ -1,24 +1,56 @@
 {
-  "admin@gmail.com": {
-    "name": "Admin",
-    "PhoneNumber": "01000000000",
-    "gender": "N/A",
-    "governorate": "Cairo",
-    "password": "admin123",
-    "age": 30,
-    "national_id": "00000000000000",
-    "role": "admin",
-    "learning_plan": []
-  },
-  "user@gmail.com": {
-    "name": "Alex",
-    "PhoneNumber": "01111111111",
-    "gender": "Male",
-    "governorate": "Giza",
-    "password": "user123",
-    "age": 20,
-    "national_id": "30111111111111",
-    "role": "user",
-    "learning_plan": []
-  }
+    "admin@gmail.com": {
+        "name": "Admin",
+        "PhoneNumber": "01000000000",
+        "gender": "N/A",
+        "governorate": "Cairo",
+        "password": "admin123",
+        "age": 30,
+        "national_id": "00000000000000",
+        "role": "admin",
+        "learning_plan": []
+    },
+    "user@gmail.com": {
+        "name": "Alex",
+        "PhoneNumber": "01111111111",
+        "gender": "Male",
+        "governorate": "Giza",
+        "password": "user123",
+        "age": 20,
+        "national_id": "30111111111111",
+        "role": "user",
+        "learning_plan": []
+    },
+    "adhamahmed@gamil.com": {
+        "name": "adham",
+        "PhoneNumber": "01143250000",
+        "gender": "male",
+        "governorate": "giza",
+        "password": "00000",
+        "age": "52",
+        "national_id": "123456789",
+        "role": "user",
+        "learning_plan": [
+            {
+                "name": "DB 2",
+                "trainer": "magdy 3lam",
+                "location": "aswan",
+                "price": 1520.0,
+                "duration": 53.0,
+                "rating": 4.0,
+                "avail_seats": 138,
+                "category": "Programming"
+            },
+            {
+                "name": "Advanced Python",
+                "trainer": "Demo Trainer",
+                "location": "Cairo",
+                "price": 100,
+                "duration": 3,
+                "rating": 4.5,
+                "avail_seats": 20,
+                "category": "Programming"
+            }
+        ]
+    }
 }
